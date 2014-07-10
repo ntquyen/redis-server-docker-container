@@ -11,6 +11,6 @@ ADD ./redis.conf /etc/redis/
 
 VOLUME /etc/redis/data
 
-EXPOSE 6379
+EXPOSE 6380
 ENTRYPOINT ["/usr/bin/redis-server"]
 
