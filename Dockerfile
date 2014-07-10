@@ -7,10 +7,10 @@ RUN apt-get install -y redis-server
 
 RUN mkdir /etc/redis/data
 
-ADD ./redis.conf /etc/redis/
+ADD ./redis.conf /etc/redis/redis.conf
 
 VOLUME /etc/redis/data
 
 EXPOSE 6380
-ENTRYPOINT /usr/bin/redis-server /etc/redis/redis.conf
+ENTRYPOINT ["/usr/bin/redis-server"]
 
