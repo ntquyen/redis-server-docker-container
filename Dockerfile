@@ -9,4 +9,4 @@ RUN mkdir /etc/redis/data
 VOLUME /etc/redis/data
 
 EXPOSE 6380
-#ENTRYPOINT ["/usr/bin/redis-server", "--port", "6380"]
+ENTRYPOINT ["/usr/bin/redis-server", "--port", "6380"]
