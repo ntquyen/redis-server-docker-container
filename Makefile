@@ -1,4 +1,4 @@
-APP_NAME = redis-server
+APP_NAME = ar-redis-server
 
 all:
 	docker build -t quyennt/redis .
